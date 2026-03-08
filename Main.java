@@ -16,6 +16,7 @@ public class Main {
             System.out.println("5 - Consultar perímetro");
             System.out.println("6 - Consultar tipo");
             System.out.println("7 - Remover figura");
+            System.out.println("8 - Ordenar por área");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
@@ -65,7 +66,10 @@ public class Main {
                     FiguraGeometrica2D removida = repo.removeFigura(posRemover);
                     System.out.println("Figura removida: " + removida);
                     break;
-
+                case 8:
+           repo.ordenarPorArea();
+    System.out.println("Figuras ordenadas por área!");
+    break;
 
                 case 0:
                     System.out.println("Encerrando programa...");
